@@ -5,4 +5,4 @@ My solutions for the Responsive Web Design Course's Projects from freeCodeCamp
 - [x] Survey Form [Preview](https://codepen.io/KhalidMesbah/pen/QWaJEyX)
 - [x] Product Landing Page [Preview](https://codepen.io/KhalidMesbah/pen/QWaJGdB)
 - [ ] Technical Documentatin Page
-- [ ] Personal Portfolio Webpage
+- [ ] Personal Portfolio Webpage [Preview](https://codepen.io/KhalidMesbah/pen/VwyVdrK)
