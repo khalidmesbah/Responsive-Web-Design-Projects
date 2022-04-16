@@ -1,0 +1,99 @@
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 10px;
+}
+
+body {
+  min-height: 100vh;
+  font-family: "Poppins", sans-serif;
+  font-size: 2rem;
+  line-height: 1.4;
+  font-weight: 400;
+  background: #333;
+  color: #f3f3f3;
+  padding: 2rem;
+}
+body::before {
+  content: "";
+  position: fixed;
+  inset: 0;
+  z-index: -1;
+  background: var(--color-darkblue);
+  background: linear-gradient(115deg, rgba(58, 58, 158, 0.8), rgba(136, 136, 206, 0.7)), url(https://cdn.freecodecamp.org/testable-projects-fcc/images/survey-form-background.jpeg) no-repeat center/cover;
+}
+
+.container {
+  margin-top: 50px;
+  margin-inline: max((100% - 70rem) / 2, 1.5rem);
+}
+.container header {
+  text-align: center;
+  padding: 0 0.5rem;
+  margin-bottom: 1.5rem;
+}
+.container header h1 {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+}
+.container header p {
+  font-weight: 200;
+  font-style: italic;
+  font-size: 1.5rem;
+  text-shadow: 1px 1px #000;
+}
+.container form {
+  background: rgba(27, 27, 50, 0.8);
+  padding: 3rem 2rem;
+  border-radius: 0.25rem;
+}
+.container form .form-group {
+  display: flex;
+  gap: 0.5rem;
+  flex-direction: column;
+  margin-bottom: 3rem;
+}
+.container form .form-group p,
+.container form .form-group label {
+  font-size: 1.5rem;
+}
+.container form .form-group label {
+  display: flex;
+  align-items: center;
+}
+.container form .form-group .form-control {
+  background: #f3f3f3;
+  padding: 1rem;
+  border: 1px solid #c7c7c7;
+  border-radius: 0.5rem;
+}
+.container form .form-group .form-control:focus {
+  outline: 0;
+}
+.container form .form-group .input-radio,
+.container form .form-group .input-checkbox {
+  margin-right: 0.8rem;
+  width: 2rem;
+  height: 2rem;
+}
+.container form .form-group .input-textarea {
+  min-height: 120px;
+  padding: 0.8rem;
+  resize: vertical;
+}
+.container form .form-group .submit-button {
+  outline: none;
+  border: none;
+  display: block;
+  padding: 0.75rem;
+  background: #37af65;
+  color: inherit;
+  border-radius: 2px;
+  cursor: pointer;
+}
