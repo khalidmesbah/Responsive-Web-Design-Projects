@@ -1,0 +1,235 @@
+/** global element styling **/
+@import "https://fonts.googleapis.com/css?family=Lato:400,700";
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  min-height: 100vh;
+  background-color: #eee;
+  font-family: "Lato", sans-serif;
+}
+
+main {
+  position: relative;
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  color: #000;
+  text-decoration: none;
+}
+
+.container {
+  width: min(100% - 6rem, 50rem);
+  margin-inline: auto;
+}
+
+/** global classes styling **/
+header {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  min-height: 75px;
+  padding: 0px 20px;
+  background-color: #eee;
+  flex-wrap: wrap;
+}
+header .logo {
+  width: 50vw;
+}
+header .logo > img {
+  width: 100%;
+  height: 100%;
+  max-width: 300px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: 20px;
+}
+header nav {
+  font-weight: 400;
+}
+header nav > ul {
+  width: 35vw;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+@media (max-width: 650px) {
+  header .logo {
+    margin-top: 15px;
+    width: 100%;
+    position: relative;
+  }
+  header .logo > img {
+    margin: 0 auto;
+  }
+  header nav {
+    margin-top: 10px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 0 50px;
+  }
+  header nav li {
+    padding-bottom: 5px;
+  }
+  header nav > ul {
+    flex-direction: column;
+  }
+}
+
+.container #hero {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  height: 200px;
+  margin-top: 50px;
+}
+.container #hero > h2 {
+  margin-bottom: 20px;
+  word-wrap: break-word;
+}
+.container #hero input[type=email] {
+  max-width: 275px;
+  width: 100%;
+  padding: 5px;
+}
+.container #hero input[type=submit] {
+  max-width: 150px;
+  width: 100%;
+  height: 30px;
+  margin: 15px 0;
+  border: 0;
+  background-color: #f1c40f;
+}
+.container #hero input[type=submit]:hover {
+  background-color: orange;
+  transition: background-color 1s;
+}
+@media (max-width: 650px) {
+  .container #hero {
+    margin-top: 120px;
+  }
+}
+.container #features {
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+  margin-top: 50px;
+}
+.container #features i {
+  color: #f1c40f;
+}
+.container #features .feature {
+  display: flex;
+  gap: 50px;
+  align-items: center;
+}
+@media (max-width: 500px) {
+  .container #features .feature {
+    flex-wrap: wrap;
+    justify-content: center;
+    text-align: center;
+  }
+}
+.container #how-it-works {
+  margin-top: 100px;
+  text-align: center;
+}
+.container #how-it-works > iframe {
+  max-width: 560px;
+  width: 100%;
+}
+.container #pricing {
+  margin-top: 60px;
+  display: flex;
+  justify-content: space-between;
+}
+.container #pricing .product {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  width: calc(100% / 3);
+  margin: 10px;
+  border: 1px solid #000;
+  border-radius: 3px;
+}
+.container #pricing .product > .level {
+  background-color: #ddd;
+  color: black;
+  padding: 15px 0;
+  width: 100%;
+  text-transform: uppercase;
+  font-weight: 700;
+}
+.container #pricing .product > h2 {
+  margin-top: 15px;
+}
+.container #pricing .product > ol {
+  margin: 15px 0;
+}
+.container #pricing .product > ol > li {
+  padding: 5px 0;
+}
+.container #pricing .product > button {
+  border: 0;
+  margin: 15px 0;
+  background-color: #f1c40f;
+  font-weight: 400;
+  font-size: 20px;
+  padding: 5px 20px;
+}
+.container #pricing .product > button:hover {
+  background-color: orange;
+  transition: background-color 1s;
+}
+@media (max-width: 800px) {
+  .container #pricing .product {
+    max-width: 300px;
+    width: 100%;
+    margin: 0 auto;
+    margin-bottom: 10px;
+  }
+}
+@media (max-width: 800px) {
+  .container #pricing {
+    flex-direction: column;
+  }
+}
+
+footer {
+  margin-top: 30px;
+  background-color: #ddd;
+  padding: 20px;
+}
+footer > ul {
+  display: flex;
+  justify-content: flex-end;
+}
+footer > ul > li {
+  padding: 0 10px;
+}
+footer > span {
+  margin-top: 5px;
+  display: flex;
+  justify-content: flex-end;
+  font-size: 0.9em;
+  color: #444;
+}
