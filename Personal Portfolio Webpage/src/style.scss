@@ -1,0 +1,238 @@
+// general styling
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+body {
+  min-height: 200vh;
+  background: #333;
+  font-family: "Poppins", sans-serif;
+  font-size: 1.8rem;
+  font-weight: 400;
+  line-height: 1.4;
+  color: #fff;
+}
+a {
+  text-decoration: none;
+  color: #fff;
+}
+html {
+  font-size: 10px;
+}
+.btn {
+  display: inline-block;
+  padding: 1rem 2rem;
+  border-radius: 2px;
+}
+h1,
+h2 {
+  font-family: "Raleway", sans-serif;
+  font-weight: 700;
+  text-align: center;
+}
+// custom styling
+header {
+  .nav {
+    position: fixed;
+    top: 0;
+    box-shadow: 0 2px 0 rgb(0 0 0 / 40%);
+    z-index: 2;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    width: 100%;
+    height: auto;
+    background: #be3144;
+    ul {
+      display: flex;
+      list-style: none;
+      padding-right: 20px;
+    }
+    .nav-list a {
+      display: block;
+      font-size: 2.2rem;
+      padding: 2rem;
+      font-family: "Poppins", sans-serif;
+      &:hover {
+        background: #45567d;
+      }
+    }
+  }
+  @media (max-width: 500px) {
+    .nav {
+      justify-content: center;
+      ul {
+        flex-wrap: wrap;
+      }
+    }
+  }
+}
+
+#welcome-section {
+  width: 100%;
+  height: 100vh;
+  display: grid;
+  place-items: center;
+  place-content: center;
+  background-color: #000;
+  background-image: linear-gradient(62deg, #3a3d40 0%, #181719 100%);
+  h1 {
+    font-size: 6rem;
+  }
+  p {
+    font-size: 3rem;
+    font-weight: 200;
+    font-style: italic;
+    font-family: "Poppins", sans-serif;
+    color: #be3144;
+  }
+}
+
+#projects {
+  text-align: center;
+  padding: 10rem 2rem;
+  background: #45567d;
+  .projects-section-header {
+    max-width: 640px;
+    margin: 0 auto 6rem auto;
+    border-bottom: 0.2rem solid #fff;
+  }
+  h2 {
+    font-size: 4.2rem;
+  }
+  .projects-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    grid-gap: 4rem;
+    width: 100%;
+    max-width: 1280px;
+    margin: 0 auto;
+    margin-bottom: 6rem;
+    .project {
+      background: #303841;
+      box-shadow: 1px 1px 2px rg ba(0, 0, 0, 0.5);
+      border-radius: 2px;
+      .code {
+        color: #303841;
+        transition: color 0.3s ease-out;
+      }
+      &:hover .code {
+        color: #ff7f50;
+      }
+      .project-image {
+        height: calc(100% - 6.8rem);
+        width: 100%;
+        object-fit: cover;
+      }
+      .project-title {
+        margin-top: -9px;
+        font-size: 2rem;
+        padding: 2rem 0.5rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 5px;
+        font-family: "Poppins", sans-serif;
+      }
+    }
+  }
+  @media (max-width: 500px) {
+    .projects-section {
+      padding: 6rem 1rem;
+    }
+
+    .projects-grid {
+      grid-template-columns: 1fr;
+    }
+  }
+  .btn-show-all {
+    font-size: 2rem;
+    background: #303841;
+    transition: background 0.3s ease-out;
+    font-family: "Poppins", sans-serif;
+    i {
+      transition: transform 0.3s ease-out;
+    }
+    &:hover {
+      background: #be3144;
+      i {
+        transform: translateX(2px);
+      }
+    }
+    .fa-chevron-right:before {
+      margin-left: 10px;
+      font-weight: 900;
+      font-family: "Font Awesome 5 Free";
+      content: "\f054";
+    }
+  }
+}
+
+#contact {
+  display: grid;
+  place-content: center;
+  place-items: center;
+  gap: 40px;
+  width: 100%;
+  height: 80vh;
+  padding: 0 2rem;
+  background: #303841;
+  text-align: center;
+  h2 {
+    font-size: 6rem;
+  }
+  p {
+    font-style: italic;
+    font-weight: 400;
+    font-family: "Poppins", sans-serif;
+  }
+  .contact-details {
+    font-size: 2.4rem;
+    text-shadow: 2px 2px 1px #1f1f1f;
+    font-family: "Poppins", sans-serif;
+    transition: transform 0.3s ease-out;
+    &:hover {
+      transform: translateY(8px);
+    }
+  }
+  .contact-links a i::before {
+    font-weight: 900;
+    font-family: "Font Awesome 5 Free";
+  }
+  .fab::before {
+    font-weight: 900;
+    font-family: "Font Awesome 5 Brands" !important;
+  }
+}
+footer {
+  font-weight: 300;
+  display: flex;
+  justify-content: space-evenly;
+  padding: 2rem;
+  background: #303841;
+  border-top: 4px solid #be3144;
+  p {
+    font-family: "Poppins", sans-serif;
+    margin: 2rem;
+    a {
+      font-family: "Poppins", sans-serif;
+      font-weight: 300 !important;
+    }
+  }
+  i {
+    vertical-align: middle;
+  }
+  i::before {
+    content: "\f2c5";
+    font-family: "Font Awesome 5 Brands" !important;
+  }
+}
+@media (max-width: 500px) {
+  footer {
+    flex-wrap: wrap;
+  }
+}
