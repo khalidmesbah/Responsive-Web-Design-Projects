@@ -1,5 +1,5 @@
 # Responsive-Web-Design-Projects
-My solutions for the Responsive Web Design Course's Projects from freeCodeCamp 
+My solutions to the Responsive Web Design Course Projects from freeCodeCamp 
 
 - [x] Tribute Page [Preview](https://codepen.io/KhalidMesbah/pen/WNdYKLb)
 - [x] Survey Form [Preview](https://codepen.io/KhalidMesbah/pen/QWaJEyX)
