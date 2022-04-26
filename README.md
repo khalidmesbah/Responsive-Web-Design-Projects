@@ -1,5 +1,7 @@
 # Responsive-Web-Design-Projects
-My solutions to the Responsive Web Design Course Projects from freeCodeCamp 
+My solutions to the Responsive Web Design Course Projects from freeCodeCamp.
+
+=> The collection of the projects on codepen lives [here](https://codepen.io/collection/OLpbLz)
 
 ## Credentials
 [Show Credential](https://www.freecodecamp.org/certification/KhalidMesbah/responsive-web-design)
